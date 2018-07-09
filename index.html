@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <script src="assets/js/jssor.slider-26.8.0.min.js"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 720,
+              $Cols: 2,
+              $Align: 130,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    </head>
+    
+    <div class="top-bar clearfix">
+      <div class="container">
+        <div class="top-link">
+          <ul>
+            <li><a href="#">HOME PAGES</a></li>
+            <li><a href="#">POSTS</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">FEATURES</a></li>
+          </ul>
+        </div>
+        <!--top-link-->
+        <div class="serach">
+          <input type="text">
+        </div>
+        <!--search-->
+        <div class="social-link">
+          <ul>
+			<li><a href="#" class="social-1"></a></li>
+            <li><a href="#" class="social-2"></a></li>
+            <li><a href="#" class="social-3"></a></li>
+            <li><a href="#" class="social-4"></a></li>
+            <li><a href="#" class="social-5"></a></li>
+          </ul>
+        </div>
+        <!--socail-link--> 
+      </div>
+      <!--container--> 
+    </div>
+    <!--top-bar-->
+    <header>
+      <div class="container">
+        <div class="logo"> <img src="assets/img/logo_top.png";> </div>
+        <!--logo-->
+        
+        <nav>
+          <ul>
+            <li><a href="#">PHOTOGRAPHY</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">FASHION</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">TECNOLOGY</a></li>
+            <li><a href="#">LIFE</a></li>
+            <li><a href="#">TRAVEL</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--container--> 
+    </header>
+    <div class="slider">
+      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;"> 
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);"> <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" /> </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+          <div data-p="137.50"> <img data-u="image" src="assets/img/001.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/002.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/003.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/004.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/005.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/006.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/007.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/009.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/010.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/015.jpg" /> </div>
+          <div data-p="137.50"> <img data-u="image" src="assets/img/022.jpg" /> </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+          <div data-u="prototype" class="i" style="width:16px;height:16px;"> <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg> </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75"> <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+          </svg> </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75"> <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+          </svg> </div>
+      </div>
+      <script type="text/javascript">jssor_1_slider_init();</script> 
+      <!-- #endregion Jssor Slider End --> 
+      
+    </div>
+    <div class="container clearfix">
+      <div class="latest">
+        <h1>LATEST POSTS</h1>
+        <P>ENTER THE SUB TITLE FOR THIS SECTION</P>
+      </div>
+      <!--latest-->
+      <div class="one-third">
+        <div class="block-1"> <img src="assets/img/latest-1.gif">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p><span>TOP NEWS ,</span> Sed ut perspiciatis unde omnis iste nayus sit volup.</p>
+        </div>
+        <!--block-1-->
+        
+        <div class="block-2"> <img src="assets/img/post_2_1.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae.</p>
+        </div>
+        <!--block-2-->
+        <div class="block-3">
+          <h6>TRAVEL , LIFE 29 , 2013 </h6>
+          <p>Veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <!--block-3-->
+        <div class="block-2"> <img src="assets/img/post_2_2.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae.</p>
+        </div>
+        <!--block-2-->
+        <div class="block-1"> <img src="assets/img/life-7.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p><span>TOP NEWS ,</span> Que ab illo inventore vertitatis et quasi architecto beatae.</p>
+        </div>
+        <!--block-1-->
+        <div class="block-1"> <img src="assets/img/post_1_5.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p><span>TOP NEWS ,</span> Voluptatem sequi nesciunt.</p>
+        </div>
+        <!--block-1--> 
+      </div>
+      <!--one-third-->
+      <div class="one-third">
+        <div class="block-1"> <img src="assets/img/life-8.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Red ut perspicitatis unde omnis iste.</p>
+        </div>
+        <!--block-1-->
+        <div class="block-1"> <img src="assets/img/block-1.gif">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Totam rem aperiam, eaque ipsa quae ab illo invevtore verit,</p>
+        </div>
+        <!--block-1-->
+        <div class="block-2"> <img src="assets/img/post_2_3.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Sed ut perspiciatis unde omnis iste natus sit volup.</p>
+        </div>
+        <!--block-2-->
+        <div class="block-2"> <img src="assets/img/post_2_4.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Eaque ipsa quae ab billo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+        </div>
+        <!--block-2-->
+        <div class="block-1"> <img src="assets/img/pic_post_1_8.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p><span>TOP NEWS ,</span> Totam rem aperiam , eaque ispa quae illo inven.</p>
+        </div>
+        <!--block-1--> 
+        
+      </div>
+      <!--one-third-->
+      <div class="one-third">
+        <div class="block-1"> <img src="assets/img/latest-3.gif">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Perspiciatis unde omnis iste.</p>
+        </div>
+        <!--block-1-->
+        
+        <div class="block-1"> <img src="assets/img/block-2.gif">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p><span>NEWS</span> Totam rem aperiam , eaque ipsa quae ab illo inventore,</p>
+        </div>
+        <!--block-1-->
+        
+        <div class="block-2"> <img src="assets/img/post_2_5.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Accusantium doloremque lauda nitum,totam.</p>
+        </div>
+        <!--block-2-->
+        
+        <div class="block-1"> <img src="assets/img/pic_post_1_9.jpg">
+          <h6>TRAVEL , LIFE 29 , 2013</h6>
+          <p>Totam rem aperiam , eaque ipsa quae ab billo inventore veritatis et quasi architecto beatae.</p>
+          <div class="block-3">
+            <h6>TRAVEL , LIFE 29 , 2013 </h6>
+            <p>Accusantium doloremque laudantium, totam rem aperiam, eaque.</p>
+          </div>
+          <!--block-3--> 
+        </div>
+        <!--block-1--> 
+      </div>
+      <!--one-third--> 
+      
+    </div>
+    <!--container-->
+    <div class="container">
+      <div class="load">
+        <h1><i class="fa fa-refresh"></i>LOAD MORE POST</h1>
+      </div>
+      <!--load--> 
+    </div>
+    <!--container-->
+    <footer class="clearfix">
+      <div class="container clearfix">
+        <div class="one-third">
+          <div class="posts">
+            <h1>POSTS CATEGORUES</h1>
+            <ul>
+              <li><a href="#">PHOTOGRAPHY</a></li>
+              <li><a href="#">DESING</a></li>
+              <li><a href="#">FASHION</a></li>
+              <li><a href="#">REVIEWS</a></li>
+              <li><a href="#">MUSIC</a></li>
+              <li><a href="#">TECHNOLOGY</a></li>
+              <li><a href="#">LIFE</a></li>
+              <li><a href="#">TRAVEL</a></li>
+            </ul>
+          </div>
+          <!--posts--> 
+        </div>
+        <!--one-third-->
+        
+        <div class="one-third">
+          <div class="tags">
+            <h1>TAGS CLOUD</h1>
+            <ul>
+              <li><a href="#">PEOPLES</a></li>
+              <li><a href="#">DESIGN</a></li>
+              <li><a href="#">TECHNOLOGY</a></li>
+              <li><a href="#">DESIN</a></li>
+              <li><a href="#">MUSIC</a></li>
+              <li><a href="#">PHOTOGRAPHY</a></li>
+              <li><a href="#">FASHION</a></li>
+              <li><a href="#">CERATIVE</a></li>
+              <li><a href="#">APPLE</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">DEVELOPMENT</a></li>
+            </ul>
+          </div>
+          <!--tgs-->
+          <div class="twitter">
+            <h1>TWITTER WIDGET</h1>
+            <p><span>WebLion Media </span>font based on the style of lettering seen on cassndre posters designd by atipo. download ti for free: <span>Cassannet.net</span></p>
+            <h3>about 230days ago</h3>
+          </div>
+          <!--twitter--> 
+        </div>
+        <!--one-third-->
+        
+        <div class="one-third">
+          <div class="instagram">
+            <h1>INSTAGRAM</h1>
+            <ul>
+              <li><a href="#"><img src="assets/img/insta-1.gif"></a></li>
+              <li><a href="#"><img src="assets/img/insta-2.gif"></a></li>
+              <li><a href="#"><img src="assets/img/insta-3.gif"></a></li>
+              <li><a href="#"><img src="assets/img/insta-4.gif"></a></li>
+              <li><a href="#"><img src="assets/img/insta-5.gif"></a></li>
+              <li><a href="#"><img src="assets/img/insta-6.gif"></a></li>
+            </ul>
+          </div>
+          <!--instagram--> 
+        </div>
+        <!--one-third--> 
+        
+      </div>
+      <!--container-->
+      <div class="footer-2">
+        <div class="container">
+          <ul>
+            <li><a href="#">HOMEPAGE</a></li>
+            <li><a href="#">POSTS</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">FEATURES</a></li>
+          </ul>
+        </div>
+        <!--container--> 
+      </div>
+      <!--footer-2-->
+      <div class="container">
+        <div class="last-para">
+          <p>&copy; Copyright 2013 by WebLionMedia . All Right Reserved.</p>
+        </div>
+        <!--last-para--> 
+      </div>
+      <!--container--> 
+    </footer>
+</body></html>
